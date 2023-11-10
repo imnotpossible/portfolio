@@ -1,0 +1,57 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    min-height: 100vh;
+    min-width: 1920px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: bold;
+}
+div{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+header{
+    background-color: #1f1f1f;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+logo{
+    margin-top: 10px;
+    margin-left: 350px;
+}
+nav{
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+    float: right;
+    color:white;
+}
+li{
+    display: inline;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    
+}
+ul li{
+    border-left: 1px solid #505050;
+}
+li:first-child{
+    padding-left: 242px;
+    border-left: none;
+}
