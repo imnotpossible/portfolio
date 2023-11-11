@@ -4,8 +4,9 @@ html, body{
     height: 100%;
 }
 body{
-    min-height: 100vh;
-    min-width: 1500px;
+    width: 100%;
+    min-width: 1280px;
+    text-align: center;
 }
 a{
     color: white;
@@ -21,13 +22,13 @@ div{
 }
 header{
     background-color: #1f1f1f;
-    margin: 0;
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
+    
 }
 
 logo{
-    margin-top: 10px;
-    margin-left: 350px;
+    margin: -20p;
 }
 .mainimg{
     max-width: 100%;
@@ -40,21 +41,33 @@ mainimg{
 }
 nav{
     margin: 0px;
+    text-align: center;
+    
+}
+
+ul, ol, dl{
+    list-style-type: none;
 }
 
 ul{
     list-style-type: none;
     padding-left: 0px;
+    margin:0px;
+    padding-bottom: 18px;
     float: right;
     color:white;
+    margin-right: auto;
+    margin-left: auto;
 }
 li{
     display: inline;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 100px;
     padding-right: 100px;
+    
 
     
 }
@@ -62,6 +75,5 @@ ul li{
     border-left: 1px solid #505050;
 }
 li:first-child{
-    padding-left: 242px;
     border-left: none;
 }
