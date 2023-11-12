@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>RtR</title>
-        <link rel="stylesheet" href="bookstyle.css">
+        <link rel="stylesheet" href="bookstyle.css?after">
     </head>
     <body>
         <script src="bookjs.js"></script>
@@ -103,20 +103,22 @@
                             <p style="font-size: 18px; font-weight:bold;">
                                 인원 수 
                                 <input type='button' class="button"
-                                    onclick='count("plus")'
-                                    value='+'/>
-                                <span id='result'>0</span>
-                                <input type='button' class="button2"
                                     onclick='count("minus")'
                                     value='-'/>
+                                <span id='result'>0</span>
+                                
+                                <input type='button' class="button2"
+                                    onclick='count("plus")'
+                                    value='+'/>
+                                <span id="text">*최대 6명</span>
                             </p>
                             <p style="font-size: 18px; font-weight:bold;">
                                 예약자
-                                <input type="text" class="textbox">
+                                <input type="text" class="textbox" placeholder="성함을 입력해 주세요.">
                             </p>
                             <p style="font-size: 18px; font-weight:bold;">
                                 연락처
-                                <input type="text" class="textbox">
+                                <input type="text" class="textbox" placeholder="연락처를 입력해 주세요.">
                             </p>
                         </form>
                     </time>
