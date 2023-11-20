@@ -17,3 +17,42 @@ mainimg{
     height: 100vh;
 
 }
+.section{
+    padding: 0 300px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.webpre{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    
+    
+}
+.webtext{
+    padding-top: 50px;
+    font-size: 25px;
+    float: left;
+}
+.webpic{
+    padding-left: 30px;
+}
+.button{
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    width: 250px;
+    margin-top: 60px;
+    margin-left: 220px;
+    padding: 0px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button:active{
+    background-color: white;
+    color: black;
+}
