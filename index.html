@@ -4,8 +4,28 @@
         <meta charset="utf-8">
         <title>이진현 포트폴리오</title>
         <link rel="stylesheet" href="main.css">
-        
-        
+
+        <style>
+            .button{
+                position: relative;
+                display: inline-block;
+                height: 70px;
+                width: 250px;
+                margin-top: 60px;
+                margin-left: 220px;
+                padding: 0px;
+                text-align: center;
+                background-color: #1f1f1f;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+.button:active{
+    background-color: white;
+    color: black;
+}
+
+        </style>
     </head>
     
     <body style=background-color:f4f4f4>
@@ -20,18 +40,19 @@
                     font-weight: bold;
                     font-size: 50px; padding-bottom: 100px;">WEB DESIGN :RtR Restuarant</div>
                     제작 페이지<br/>
-                    <span style="font-weight:lighter; ">메인, 서브(예약, 오시는 길)</span><p></p>
+                    <div style="font-weight:lighter; ">메인, 서브(예약, 오시는 길)</div><p></p>
                     사용 프로그램<br/>
-                    <span style="font-weight:lighter; padding-right: 50px;">HTML5, CSS3, JAVASCRIPT, PHOTOSHOP, GitHub</span>
+                    <div style="font-weight:lighter; padding-right: 50px;">HTML5, CSS3, JAVASCRIPT, PHOTOSHOP, GitHub</div>
                     <p></p>
-                    <input type="button" class="button" onclick="location.href='rtr_main.html'" value="홈페이지로 이동하기">
-
                 </div>
-                <div class="webpic" style="padding-top: 150px; padding-bottom: 200px;">
+                <input type="button" class="button" value="홈페이지로 이동하기" onclick="location.href='rtr_main.html'" />
+                <div class="webpic" style="padding-top: 50px; padding-bottom: 200px;">
                     <img src="computer.png" width="500px" >
                 </div>
+                
             </div>
+            
         </div>
-
+        
     </body>
 </html>
