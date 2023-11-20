@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    
 }
 body{
     width: 100%;
@@ -36,7 +37,9 @@ mainimg{
     float: left;
 }
 .webpic{
-    padding-left: 30px;
+    padding-left: 700px;
+    
+    position: absolute;
 }
 .button{
     position: relative;
