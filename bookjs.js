@@ -22,3 +22,14 @@ function count(type)  {
     // 결과 출력
     resultElement.innerText = number;
 }
+
+function showConfirm(){
+    if(confirm("예약하시겠습니까?")){
+        alert("예약되었습니다.");
+        location.replace(location.href);
+        window.open("https://imnotpossible.github.io/portfolio/rtr_main", "_self");
+    }else{
+        alert("취소되었습니다");
+        location.replace(location.href);
+    }
+}

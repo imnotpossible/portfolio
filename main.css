@@ -18,25 +18,25 @@ mainimg{
     height: 100vh;
 
 }
-.section{
+section{
     padding-left: 300px;
     max-width: 100%;
     max-height: 100%;
-    
+    padding-right: 300px;
 }
-.webpre{
+webpre{
     font-family: 'Pretendard', sans-serif;
     font-weight: bold;
     font-size: 35px;
     
     
 }
-.webtext{
+webtext{
     padding-top: 50px;
     font-size: 25px;
     float: left;
 }
-.webpic{
+webpic{
     padding-left: 700px;
     
     position: absolute;

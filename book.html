@@ -20,113 +20,124 @@
                 </nav>
             </div>
         </header>
-        <div class="bookbox">
-            <div class="items">
-                <book>
-                    <img src="bookimg2.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
-                    날짜 선택
-                </book>
-                <p>
-                    <date>
-                        <form>
-                            <input type='date' 
-                            placeholder='날짜를 선택해주세요.'
-                            required
-                            value={props.date}
-                            onChange={props.changeHandler}
-                            id='dateSelect'
-                            min={props.isFullRange ? undefined : getDate()}
-                            id='currentDate'/>
-                        </form>
-                                
-                    </date>
-                </p>
-            </div>
-            <div class="items">
-                <book>
-                    <img src="clock.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
-                    시간 선택
-                </book>
-                <p>
-                    <time id="timebox">
-                        <form id="item">
-                            <p style="font-size: 18px; font-weight:bold;">
-                                오전
-                            </p>
-                            <div class="select">
-                                <input type="radio" id="select" name="time"><label for="select">11:00</label>
-                                <input type="radio" id="select2" name="time"><label for="select2">11:30</label>
-                            </div>
-                            <p style="font-size: 18px; font-weight:bold;">
-                                오후
-                            </p>
-                            <div class="select">
-                                <input type="radio" id="select3" name="time"><label for="select3">12:00</label>
-                                <input type="radio" id="select4" name="time"><label for="select4">12:30</label>
-                                <input type="radio" id="select5" name="time"><label for="select5">1:00</label>
-                                <input type="radio" id="select6" name="time"><label for="select6">1:30</label>
-                                <p>
-                                    <input type="radio" id="select7" name="time"><label for="select7">2:00</label>
-                                    <input type="radio" id="select8" name="time"><label for="select8">2:30</label>
-                                    <input type="radio" id="select9" name="time"><label for="select9">3:00</label>
-                                    <input type="radio" id="select10" name="time"><label for="select10">3:30</label>
-                                </p>
-                                <p>
-                                    <input type="radio" id="select11" name="time"><label for="select11">4:00</label>
-                                    <input type="radio" id="select12" name="time"><label for="select12">4:30</label>
-                                    <input type="radio" id="select13" name="time"><label for="select13">5:00</label>
-                                    <input type="radio" id="select14" name="time"><label for="select14">5:30</label>
-                                </p>
-                                <p>
-                                    <input type="radio" id="select15" name="time"><label for="select15">6:00</label>
-                                    <input type="radio" id="select16" name="time"><label for="select16">6:30</label>
-                                    <input type="radio" id="select17" name="time"><label for="select17">7:00</label>
-                                    <input type="radio" id="select18" name="time"><label for="select18">7:30</label>
-                                </p>
-                                <p>
-                                    <input type="radio" id="select19" name="time"><label for="select19">8:00</label>
-                                    <input type="radio" id="select20" name="time"><label for="select20">8:30</label>
-                                </p>
-                            </div>
-                        </form>
-                    </time>
-                </p>
-            </div>
-            <div class="items">
-                <book>
-                    <img src="perimg.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
-                    예약 정보
-                </book>
-                <p>
-                    <time id="timebox">
-                        <form id="item">
-                            <p style="font-size: 18px; font-weight:bold;">
-                                인원 수 
-                                <input type='button' class="button"
-                                    onclick='count("minus")'
-                                    value='-'/>
-                                <span id='result'>0</span>
-                                
-                                <input type='button' class="button2"
-                                    onclick='count("plus")'
-                                    value='+'/>
-                                <span id="text">*최대 6명</span>
-                            </p>
-                            <p style="font-size: 18px; font-weight:bold;">
-                                예약자
-                                <input type="text" class="textbox" placeholder="성함을 입력해 주세요.">
-                            </p>
-                            <p style="font-size: 18px; font-weight:bold;">
-                                연락처
-                                <input type="text" class="textbox" placeholder="연락처를 입력해 주세요.">
-                            </p>
-                        </form>
-                    </time>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <input type="button" class="button3" value="예약하기" onclick="alert('예약되었습니다')">
-        </div>
+
+        <booksection>
+            <bookbox>
+                <datebook>
+                    <div class="items">
+                        <book>
+                            <img src="bookimg2.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
+                            날짜 선택
+                        </book>
+                        <p>
+                            <date>
+                                <form>
+                                    <input type='date' 
+                                    placeholder='날짜를 선택해주세요.'
+                                    required
+                                    value={props.date}
+                                    onChange={props.changeHandler}
+                                    id='dateSelect'
+                                    min={props.isFullRange ? undefined : getDate()}
+                                    id='currentDate'/>
+                                </form>
+                                        
+                            </date>
+                        </p>
+                    </div>
+                </datebook>
+                <timebook>
+                    <div class="items">
+                        <book>
+                            <img src="clock.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
+                            시간 선택
+                        </book>
+                        <p>
+                            <time id="timebox">
+                                <form id="item">
+                                    <p style="font-size: 18px; font-weight:bold;">
+                                        오전
+                                    </p>
+                                    <div class="select">
+                                        <input type="radio" id="select" name="time"><label for="select">11:00</label>
+                                        <input type="radio" id="select2" name="time"><label for="select2">11:30</label>
+                                    </div>
+                                    <p style="font-size: 18px; font-weight:bold;">
+                                        오후
+                                    </p>
+                                    <div class="select">
+                                        <input type="radio" id="select3" name="time"><label for="select3">12:00</label>
+                                        <input type="radio" id="select4" name="time"><label for="select4">12:30</label>
+                                        <input type="radio" id="select5" name="time"><label for="select5">1:00</label>
+                                        <input type="radio" id="select6" name="time"><label for="select6">1:30</label>
+                                        <p>
+                                            <input type="radio" id="select7" name="time"><label for="select7">2:00</label>
+                                            <input type="radio" id="select8" name="time"><label for="select8">2:30</label>
+                                            <input type="radio" id="select9" name="time"><label for="select9">3:00</label>
+                                            <input type="radio" id="select10" name="time"><label for="select10">3:30</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" id="select11" name="time"><label for="select11">4:00</label>
+                                            <input type="radio" id="select12" name="time"><label for="select12">4:30</label>
+                                            <input type="radio" id="select13" name="time"><label for="select13">5:00</label>
+                                            <input type="radio" id="select14" name="time"><label for="select14">5:30</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" id="select15" name="time"><label for="select15">6:00</label>
+                                            <input type="radio" id="select16" name="time"><label for="select16">6:30</label>
+                                            <input type="radio" id="select17" name="time"><label for="select17">7:00</label>
+                                            <input type="radio" id="select18" name="time"><label for="select18">7:30</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" id="select19" name="time"><label for="select19">8:00</label>
+                                            <input type="radio" id="select20" name="time"><label for="select20">8:30</label>
+                                        </p>
+                                    </div>
+                                </form>
+                            </time>
+                        </p>
+                    </div>
+                </timebook>
+                <infobook>
+                    <div class="items">
+                        <book>
+                            <img src="perimg.png" width="35px" style="margin-bottom: -5px; margin-right: 10px;">
+                            예약 정보
+                        </book>
+                        <p>
+                            <time id="timebox">
+                                <form id="item">
+                                    <p style="font-size: 18px; font-weight:bold;">
+                                        인원 수 
+                                        <input type='button' class="button"
+                                            onclick='count("minus")'
+                                            value='-'/>
+                                        <span id='result'>0</span>
+                                        
+                                        <input type='button' class="button2"
+                                            onclick='count("plus")'
+                                            value='+'/>
+                                        <span id="text">*최대 6명</span>
+                                    </p>
+                                    <p style="font-size: 18px; font-weight:bold;">
+                                        예약자
+                                        <input type="text" class="textbox" placeholder="성함을 입력해 주세요.">
+                                    </p>
+                                    <p style="font-size: 18px; font-weight:bold;">
+                                        연락처
+                                        <input type="text" class="textbox" placeholder="연락처를 입력해 주세요.">
+                                    </p>
+                                </form>
+                            </time>
+                        </p>
+                    </div>
+                </infobook>
+            </bookbox>
+            <bookCheck>
+                <input type="button" class="button3" value="예약하기" onclick="showConfirm();"/>
+                <p id="demo"></p>
+                
+            </bookCheck>
+        </booksection>  
     </body>
 </html>
