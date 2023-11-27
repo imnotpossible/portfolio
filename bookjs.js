@@ -25,7 +25,6 @@ function count(type)  {
 
 function showConfirm(){
     if(confirm("예약하시겠습니까?")){
-        alert("예약되었습니다.");
         location.replace(location.href);
         window.open("https://imnotpossible.github.io/portfolio/rtr_main", "_self");
         window.open("https://imnotpossible.github.io/portfolio/check", "","width=500, height=600");
