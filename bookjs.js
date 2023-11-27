@@ -29,7 +29,7 @@ function showConfirm(){
         location.replace(location.href);
         window.open("https://imnotpossible.github.io/portfolio/rtr_main", "_self");
     }else{
-        alert("취소되었습니다");
+        alert("취소되었습니다.");
         location.replace(location.href);
     }
 }

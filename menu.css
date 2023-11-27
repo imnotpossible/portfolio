@@ -47,7 +47,8 @@ nav{
     
     margin: 0px;
     text-align: center;
-    
+    padding: 0;
+    display: inline-block;
 }
 
 ul, ol, dl{

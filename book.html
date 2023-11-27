@@ -8,17 +8,14 @@
     <body>
         <script src="bookjs.js"></script>
         <header>
-            <div>
-                <nav>
-                    <ul>
-                        <li><logo><a href="rtr_main.html"> <img src="logo.png"width="60px" style="margin-bottom:-23px; margin-right: 15px;"></a></logo></li>
-                        <li><a href="book.html">예약</a></li>
-                        <li><a href="map.html">오시는 길</a></li>
-                        <li><a href="">RtR 소개</a></li>
-                    </ul>
-
-                </nav>
-            </div>
+            <nav>
+                <ul>
+                    <li><logo><a href="rtr_main.html"> <img src="logo.png"width="60px" style="margin-bottom:-23px; margin-right: 15px;"></a></logo></li>
+                    <li><a href="book.html">예약</a></li>
+                    <li><a href="map.html">오시는 길</a></li>
+                    <li><a href="">RtR 소개</a></li>
+                </ul>
+            </nav>
         </header>
 
         <booksection>
@@ -105,7 +102,7 @@
                             예약 정보
                         </book>
                         <p>
-                            <time id="timebox">
+                            <per id="timebox">
                                 <form id="item">
                                     <p style="font-size: 18px; font-weight:bold;">
                                         인원 수 
@@ -128,16 +125,16 @@
                                         <input type="text" class="textbox" placeholder="연락처를 입력해 주세요.">
                                     </p>
                                 </form>
-                            </time>
+                            </per>
                         </p>
                     </div>
                 </infobook>
             </bookbox>
-            <bookCheck>
-                <input type="button" class="button3" value="예약하기" onclick="showConfirm();"/>
+            <bookcheck>
+                <input type="submit" class="button3" value="예약하기" onclick="showConfirm();"/>
                 <p id="demo"></p>
                 
-            </bookCheck>
+            </bookcheck>
         </booksection>  
     </body>
 </html>
